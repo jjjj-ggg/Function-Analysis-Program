@@ -2,6 +2,8 @@
 
 
 f = input("enter a function: ")
+i = input("enter an interval: ")
 
+print ("the soultion is", i)
 
 
