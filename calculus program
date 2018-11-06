@@ -1,2 +1,7 @@
 
-hello world
+
+
+f = input("enter a function: ")
+
+
+
