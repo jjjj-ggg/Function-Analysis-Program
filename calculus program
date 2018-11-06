@@ -1,9 +1,16 @@
 
 
 
-f = input("enter a function: ")
-i = input("enter an interval: ")
+#f = input("enter a function: ")             #user inputs the funciton they want
+#i = input("enter an interval: ")            #user inputs the domain of the function 
 
-print ("the soultion is", i)
 
+
+f = x*2
+f = list (f)
+
+print (f)
+
+
+#f_prime = 
 
