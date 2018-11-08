@@ -1,14 +1,29 @@
 
 
 
-f = input("enter a function: ")             #user inputs the funciton they want
-#i = input("enter an interval: ")            #user inputs the domain of the function 
+f = input("enter a function in terms of x: ")             #user inputs the funciton they want
+#i = input("enter an interval: ")           #user inputs the domain of the function 
 
 
-f = list (f)
+f = list (f)                                #makes f function into a list
 
-print (f)
+
+if "x" in f:
+    
+    print ()
+
+if "x^" in f:
+    
+
+
+
+
 
 
 #f_prime = 
 
+
+
+
+
+#print (f)
