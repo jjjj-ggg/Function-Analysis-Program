@@ -1,12 +1,10 @@
 
 
 
-#f = input("enter a function: ")             #user inputs the funciton they want
+f = input("enter a function: ")             #user inputs the funciton they want
 #i = input("enter an interval: ")            #user inputs the domain of the function 
 
 
-
-f = x*2
 f = list (f)
 
 print (f)
