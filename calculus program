@@ -8,11 +8,12 @@ f = input("enter a function in terms of x: ")             #user inputs the funci
 f = list (f)                                #makes f function into a list
 
 
-if "x" in f:
-    
-    print ()
 
-if "x^" in f:
+#polynomial
+if (int,"x") in f:
+    print (int)
+
+if ("x^", int) in f:
     
 
 
@@ -21,9 +22,4 @@ if "x^" in f:
 
 
 #f_prime = 
-
-
-
-
-
 #print (f)
