@@ -20,14 +20,15 @@ x = 0       #defines x as 0
 for x in range(a,b+1):
     h = (0.001)
 
-    def fun() = (eval(f))
-    print(fun)
+    def fun():
+        fun = (eval(f))
+    print (x, ",", eval(f)) 
     
     
     
-"""
     def deriv():
         deriv = (fun(x+h) - fun(x))/h
+    print (x, ",", deriv) 
 
 
 
@@ -35,7 +36,7 @@ for x in range(a,b+1):
 
 
 
-    
+    """
     function = (eval(f))            #evaluates x as a fucntion
     j = f+h
     
