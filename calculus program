@@ -15,8 +15,9 @@ def fun(f,x):
     fun = (eval(f))
     return fun
     
+    
 #inputs
-f = input("enter a function in terms of x: ")                       #user inputs the funciton they want
+f = input("enter a function equal to f(x) in terms of x: ")                       #user inputs the funciton they want
 #a = int(input("what is the lower limit of your interval?: "))      #user inputs the domain of the function 
 #b = int(input("what is the upper limit of your interval?: "))      #user inputs the domain of the function
 a = 0
@@ -26,10 +27,16 @@ b = 10
 x = 0                                                               #defines x as 0
 
 for x in range(a,b+1):
-    h = (0.001)
     f1 = eval(f)
     print(f1)
-    f2 = 
+    
+h = 0.001   
+def fh(f,h):
+    return f + h
+    
+for x in range (a,b+1):
+    f2= eval(fh)
+    print (fh)
 
     
     
@@ -42,7 +49,7 @@ for x in range(a,b+1):
 
 
 
-    """
+"""
     function = (eval(f))            #evaluates x as a fucntion
     j = f+h
     
