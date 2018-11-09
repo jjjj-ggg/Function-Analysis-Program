@@ -2,18 +2,30 @@
 
 
 f = input("enter a function in terms of x: ")             #user inputs the funciton they want
-#i = input("enter an interval: ")           #user inputs the domain of the function 
-
+a = input("what is the upper limit of your interval?: ")           #user inputs the domain of the function 
+b = input("what is the lower limit of your interval?: ")
 
 f = list (f)                                #makes f function into a list
+
+
+
+
+for x in range[a,b]:
+    print (
+    
+
 
 
 
 #polynomial
 if (int,"x") in f:
     print (int)
+    
 
-if ("x^", int) in f:
+
+
+
+#if ("x^", int) in f:
     
 
 
