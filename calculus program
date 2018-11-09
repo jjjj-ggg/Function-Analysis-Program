@@ -22,6 +22,7 @@ f = input("enter a function equal to f(x) in terms of x: ")                     
 #b = int(input("what is the upper limit of your interval?: "))      #user inputs the domain of the function
 a = 0
 b = 10
+h = 0.001
 #print (x, ",", eval(f)) 
 
 x = 0                                                               #defines x as 0
@@ -30,7 +31,7 @@ for x in range(a,b+1):
     f1 = eval(f)
     print(f1)
     
-h = 0.001   
+   
 def fh(f,h):
     return f + h
     
