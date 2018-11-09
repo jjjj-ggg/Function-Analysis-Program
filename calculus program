@@ -17,12 +17,25 @@ b = int(input("what is the upper limit of your interval?: ")) #user inputs the d
 
 x = 0       #defines x as 0
 
-
-
 for x in range(a,b+1):
+    h = (0.001)
+
+    def fun() = (eval(f))
+    print(fun)
+    
+    
+    
+"""
+    def deriv():
+        deriv = (fun(x+h) - fun(x))/h
 
 
-    h = list(0.001)
+
+
+
+
+
+    
     function = (eval(f))            #evaluates x as a fucntion
     j = f+h
     
@@ -33,4 +46,4 @@ for x in range(a,b+1):
     
     prime = ((eval(fh))-(eval(f)))/h       #def of derivitive fuction
     print (prime)
-    
+    """
