@@ -28,8 +28,7 @@ for x in range(a,b+1):
     
     def deriv():
         deriv = (eval(x+h) - eval(x))/h
-    print (x, ",", deriv) 
-
+    print (x, ",", eval(f)) 
 
 
 
