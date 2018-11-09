@@ -14,21 +14,22 @@ from math import sin, cos, radians
 def fun(f,x):
     fun = (eval(f))
     return fun
-#print (x, ",", eval(f)) 
     
-f = input("enter a function in terms of x: ")             #user inputs the funciton they want
-#a = int(input("what is the lower limit of your interval?: ")) #user inputs the domain of the function 
-#b = int(input("what is the upper limit of your interval?: ")) #user inputs the domain of the function
-
+#inputs
+f = input("enter a function in terms of x: ")                       #user inputs the funciton they want
+#a = int(input("what is the lower limit of your interval?: "))      #user inputs the domain of the function 
+#b = int(input("what is the upper limit of your interval?: "))      #user inputs the domain of the function
 a = 0
-b = 1
-x = 0       #defines x as 0
+b = 10
+#print (x, ",", eval(f)) 
+
+x = 0                                                               #defines x as 0
 
 for x in range(a,b+1):
     h = (0.001)
     f1 = eval(f)
     print(f1)
-    f2 = eval(
+    f2 = 
 
     
     
