@@ -1,38 +1,25 @@
 
+"""
+NOTES:
+- to do exponents do ** not ^
+
+
+"""
+
+
 from math import sin, cos, radians
 
 f = input("enter a function in terms of x: ")             #user inputs the funciton they want
 a = int(input("what is the lower limit of your interval?: ")) #user inputs the domain of the function 
 b = int(input("what is the upper limit of your interval?: ")) #user inputs the domain of the function
 
-#f = list(f)                                              #makes f function into a list
-x = 0
+
+x = 0       #defines x as 0
 
 
 
-for x in range(a,b):
-    print(eval(f))
-    
+for x in range(a,b+1):
 
+    function = (eval(f))                  #evaluates x as a fucntion
+    print (x, ",", function)            #prints x and f(x) as a coordinate
 
-""""
-
-#polynomial
-if (int,"x") in f:
-    print (int)
-    
-
-
-
-
-#if ("x^", int) in f:
-    
-
-
-
-
-
-
-#f_prime = 
-#print (f)
-"""
