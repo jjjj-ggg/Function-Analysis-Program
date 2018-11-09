@@ -2,11 +2,20 @@
 from math import sin, cos, radians
 
 f = input("enter a function in terms of x: ")             #user inputs the funciton they want
-a = input("what is the upper limit of your interval?: ")  #user inputs the domain of the function 
-b = input("what is the lower limit of your interval?: ")  #user inputs the domain of the function
+a = int(input("what is the lower limit of your interval?: ")) #user inputs the domain of the function 
+b = int(input("what is the upper limit of your interval?: ")) #user inputs the domain of the function
 
-f = list (f)                                              #makes f function into a list
+#f = list(f)                                              #makes f function into a list
+x = 0
 
+
+
+for x in range(a,b):
+    print(eval(f))
+    
+
+
+""""
 
 #polynomial
 if (int,"x") in f:
