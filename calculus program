@@ -1,5 +1,5 @@
 
-
+from math import sin, cos, radians
 
 f = input("enter a function in terms of x: ")             #user inputs the funciton they want
 a = input("what is the upper limit of your interval?: ")           #user inputs the domain of the function 
