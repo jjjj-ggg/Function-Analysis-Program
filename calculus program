@@ -22,7 +22,7 @@ x = 0       #defines x as 0
 for x in range(a,b+1):
 
 
-    h = (0.001)
+    h = list(0.001)
     function = (eval(f))            #evaluates x as a fucntion
     j = f+h
     
