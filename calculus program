@@ -15,27 +15,47 @@ f = input("enter a function equal to f(x) in terms of x: ")                     
 #b = int(input("what is the upper limit of your interval?: "))      #user inputs the domain of the function
 a = 0
 b = 10
-h = 0.001
-x = 0                                                               #defines x as 0
+
+
+#defines initial values
+h = 0.000000000000001
+x = 0                                                              
+
+
+f1 = []                         #opens an empty definition for f1 so that later we can pull it back with that x value
+for x in range(a,b+1):          
+    f1.append(eval(f))          #finds f(x)
+
+
+fprime = []                     #opens an empty definition for f prime function
+for x in range (a,b+1):         
+    x = h+x                     #defines x as x + h to find f(x+h)
+    fh= eval(f)                 #finds f(x+h)
+    x = int(x-h+.1)-a           #redefines x in the loop
+    fprime.append((fh-f1[x])/h) #solves for the derivitive using the definition of a derivitive
+
+
+#prints function outputs
+print ("f(x) in range", a, "to", b, "equals: ")
+print (f1)
+
+print ("f'(x) in range", a, "to", b, "equals: ")
+print (fprime)
 
 
 
-#print ("f(x) = ")
-for x in range(a,b+1):
-    x = x
-    f1 = eval(f)
-    print(f1)
-    
-#print ("f(x+h) = ")
-for x in range (a,b+1):
-    x = h+x
-    fh= eval(f)
-    #print (fh)
-    
 
-    print ("f'(x) = ",f1, fh)
-    fprime = (fh-f1)/h
-    print (fprime)
+
+
+
+
+
+
+
+
+
+
+
 
 
 """
