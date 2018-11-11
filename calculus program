@@ -17,18 +17,18 @@ b = 10 # upper limit
 
 
 
-h = 0.000000001 # defines delta x or h
+h = 0.000000001                 #defines delta x or h
 
 
-f1 = []     # creates f1 which is a list that will contain y values for the function
+f1 = []                         # creates f1 which is a list that will contain y values for the function
 for x in range(a,b+1):          
-   f1.append(eval(f))       #calcuates f(x) and puts in f1
+   f1.append(eval(f))           #calcuates f(x) and puts in f1
 
 
-fprime = []                     # creates a list that will contain fprimes
+fprime = []                     #creates a list that will contain fprimes
 for x in range (a,b+1):         
-   x = h+x                      # redefines x as x + h to find f(x+h)
-   fh= eval(f)                  # calculates f(x+h)
+   x = h+x                      #redefines x as x + h to find f(x+h)
+   fh= eval(f)                  #calculates f(x+h)
    x = int(x-h+.1)-a            #redefines x so that it points to the coresponding f(x) value in f1
    fprime.append((fh-f1[x])/h)  # calculates the derivitive using the definition of a derivitive and puts in fprime
 
