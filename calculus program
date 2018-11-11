@@ -1,4 +1,3 @@
-
 """
 NOTES:
 - to do exponents do ** not ^
@@ -10,36 +9,38 @@ NOTES:
 from math import sin, cos, radians
 
 #inputs
-f = input("enter a function equal to f(x) in terms of x: ")                       #user inputs the funciton they want
+f = input("enter a function equal to f(x) in terms of x: ")         #user inputs the funciton they want
 #a = int(input("what is the lower limit of your interval?: "))      #user inputs the domain of the function 
 #b = int(input("what is the upper limit of your interval?: "))      #user inputs the domain of the function
-a = 0
-b = 10
+a = 0 # lower limit
+b = 10 # upper limit
 
 
-#defines initial values
-h = 0.000000000000001
-x = 0                                                              
+
+h = 0.000000001 # defines delta x or h
 
 
-f1 = []                         #opens an empty definition for f1 so that later we can pull it back with that x value
+f1 = []     # creates f1 which is a list that will contain y values for the function
 for x in range(a,b+1):          
-    f1.append(eval(f))          #finds f(x)
+   f1.append(eval(f))       #calcuates f(x) and puts in f1
 
 
-fprime = []                     #opens an empty definition for f prime function
+fprime = []                     # creates a list that will contain fprimes
 for x in range (a,b+1):         
-    x = h+x                     #defines x as x + h to find f(x+h)
-    fh= eval(f)                 #finds f(x+h)
-    x = int(x-h+.1)-a           #redefines x in the loop
-    fprime.append((fh-f1[x])/h) #solves for the derivitive using the definition of a derivitive
+   x = h+x                      # redefines x as x + h to find f(x+h)
+   fh= eval(f)                  # calculates f(x+h)
+   x = int(x-h+.1)-a            #redefines x so that it points to the coresponding f(x) value in f1
+   fprime.append((fh-f1[x])/h)  # calculates the derivitive using the definition of a derivitive and puts in fprime
 
 
 #prints function outputs
-print ("f(x) in range", a, "to", b, "equals: ")
+print ("f(x) in range", a, "to", b, "equals: ") 
 print (f1)
 
-print ("f'(x) in range", a, "to", b, "equals: ")
+print ("f'(x) in range", a, "to", b, "equals: ") 
 print (fprime)
+
+
+
 
 
