@@ -3,19 +3,12 @@
 NOTES:
 - to do exponents do ** not ^
 - def of a derivitive = f' = (f(x+h) - f(x))/h as h approaches 0
-
+- print (x, ",", eval(f)) 
 
 """
 
-
 from math import sin, cos, radians
 
-
-def fun(f,x):
-    fun = (eval(f))
-    return fun
-    
-    
 #inputs
 f = input("enter a function equal to f(x) in terms of x: ")                       #user inputs the funciton they want
 #a = int(input("what is the lower limit of your interval?: "))      #user inputs the domain of the function 
@@ -23,23 +16,24 @@ f = input("enter a function equal to f(x) in terms of x: ")                     
 a = 0
 b = 10
 h = 0.001
-#print (x, ",", eval(f)) 
-
 x = 0                                                               #defines x as 0
 
+print ("f(x) = ")
 for x in range(a,b+1):
     f1 = eval(f)
     print(f1)
     
-   
-#def fh(f,h):
-#    return f + h
-    
+print ("f(x+h) = ")
 for x in range (a,b+1):
-    x = 0.001+x
+    x = h+x
     fh= eval(f)
     print (fh)
 
+print ("f'(x) = ")
+for x in range (a,b+1):
+    x = x-h
+    fprime = (f2-f1)/h
+    print (fprime)
     
     
    #def deriv():
