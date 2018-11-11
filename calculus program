@@ -32,11 +32,12 @@ for x in range(a,b+1):
     print(f1)
     
    
-def fh(f,h):
-    return f + h
+#def fh(f,h):
+#    return f + h
     
 for x in range (a,b+1):
-    f2= eval(fh)
+    x = 0.001+x
+    fh= eval(f)
     print (fh)
 
     
