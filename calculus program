@@ -30,17 +30,9 @@ for x in range (a,b+1):
    x = h+x                      #redefines x as x + h to find f(x+h)
    fh= eval(f)                  #calculates f(x+h)
    x = int(x-h+.1)-a            #redefines x so that it points to the coresponding f(x) value in f1
-   fprime.append((fh-f1[x])/h)  # calculates the derivitive using the definition of a derivitive and puts in fprime
-
-
-#prints function outputs
-print ("f(x) in range", a, "to", b, "equals: ") 
-print (f1)
-
-print ("f'(x) in range", a, "to", b, "equals: ") 
-print (fprime) 
-
-
+   p=round(((fh-f1[x])/h), 3)
+   fprime.append(p)  # calculates the derivitive using the definition of a derivitive and 
+                                # puts in fprime
 
 ##############
 
@@ -58,8 +50,35 @@ for x in range (a,b+1):
 
 print (fdouble)
 
+####################
 
+#prints function outputs
+print ("f(x) in range", a, "to", b, "equals: ") 
+print (f1)
 
+print ("f'(x) in range", a, "to", b, "equals: ") 
+print (fprime)
 
+print("absolute min: ", min(f1))
+print("absolute max: ", max(f1))
 
+#extrema at interior pts
+if fprime.append(eval(f))==0 in list(fprime) and fprime2.append(eval(f))<0 in list(fprime2) :
+    print("local max @")
+if fprime.append(eval(f))==0 in list(fprime) and fprime2.append(eval(f))>0 in list(fprime) :
+    print("local min @")
+"""
+#loop and figure out how to get x-value & include where fprime=DNE 1/0
 
+#extrema at endpts
+if fprime(a)<0:
+    print ("local max @ x=", a)
+if fprime(b)>0:
+    print ("local max @ x=", a)
+if fprime(b)<0:
+    print ("local min @ x=", a)
+"""
+   
+#pts of inflection:
+#if fprime2.append(Eval(f))=0 in list(fprime2) and
+# +/-h are positive and negative=> POI
