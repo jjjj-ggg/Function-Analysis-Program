@@ -29,7 +29,9 @@ for x in range (a,b+1):
    fh= eval(f)                  #calculates f(x+h)
    x = int(x-h+.1)-a            #redefines x so that it points to the coresponding f(x) value in f1
    p=round(((fh-f1[x])/h), 3)
-   fprime.append(p)  # calculates the derivitive using the definition of a derivitive and puts in fprime
+   fprime.append(p)             # calculates the derivitive using the definition of a derivitive and puts in fprime
+
+print (fprime[3])               #calling f' at x = 3
 
 
 ####################_finds extremes using f'
@@ -44,11 +46,20 @@ print("absolute min: ", min(f1))
 print("absolute max: ", max(f1))
 
 
+g = (list(h))
+print (g)
 
+#fprime1 = fprime + list(h)
+#print (fprime1)
+
+
+"""
 ##############_finding f''
 
+
 f2 = []                         # creates f2 which is a list that will contain y values for the function
-for x in range(a,b+1):          
+for x in range(a,b+1):
+    w = x+h
    f2.append(eval(fprime))      #calcuates f1(x) and puts in f2
 
 
@@ -64,6 +75,11 @@ print (fdouble)
 
 
 
+"""
+
+
+
+"""
 #####################_finds concavity using f''
 #extrema at interior pts
 if fprime.append(eval(f))==0 in list(fprime) and fdouble.append(eval(f))<0 in list(fdouble) :
@@ -75,7 +91,7 @@ if fprime.append(eval(f))==0 in list(fprime) and fdouble.append(eval(f))>0 in li
 
 
 
-"""
+
 #loop and figure out how to get x-value & include where fprime=DNE 1/0
 
 #extrema at endpts
@@ -85,8 +101,12 @@ if fprime(b)>0:
     print ("local max @ x=", a)
 if fprime(b)<0:
     print ("local min @ x=", a)
-"""
-   
+
+
 #pts of inflection:
 #if fprime2.append(Eval(f))=0 in list(fprime2) and
 # +/-h are positive and negative=> POI
+
+
+
+"""
