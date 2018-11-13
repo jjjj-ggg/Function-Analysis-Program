@@ -29,8 +29,7 @@ for x in range (a,b+1):
    fh= eval(f)                  #calculates f(x+h)
    x = int(x-h+.1)-a            #redefines x so that it points to the coresponding f(x) value in f1
    p=round(((fh-f1[x])/h), 3)
-   fprime.append(p)  # calculates the derivitive using the definition of a derivitive and 
-                                # puts in fprime
+   fprime.append(p)  # calculates the derivitive using the definition of a derivitive and puts in fprime
 
 
 ####################_finds extremes using f'
