@@ -14,12 +14,10 @@ f = input("enter a function equal to f(x) in terms of x: ")         #user inputs
 #b = int(input("what is the upper limit of your interval?: "))      #user inputs the domain of the function
 a = 0 # lower limit
 b = 10 # upper limit
-
-
-
 h = 0.000000001                 #defines delta x or h
 
 
+########_finding f'
 f1 = []                         # creates f1 which is a list that will contain y values for the function
 for x in range(a,b+1):          
    f1.append(eval(f))           #calcuates f(x) and puts in f1
@@ -34,7 +32,21 @@ for x in range (a,b+1):
    fprime.append(p)  # calculates the derivitive using the definition of a derivitive and 
                                 # puts in fprime
 
-##############
+
+####################_finds extremes using f'
+#prints function outputs
+print ("f(x) in range", a, "to", b, "equals: ") 
+print (f1)
+
+print ("f'(x) in range", a, "to", b, "equals: ") 
+print (fprime)
+
+print("absolute min: ", min(f1))
+print("absolute max: ", max(f1))
+
+
+
+##############_finding f''
 
 f2 = []                         # creates f2 which is a list that will contain y values for the function
 for x in range(a,b+1):          
@@ -50,23 +62,20 @@ for x in range (a,b+1):
 
 print (fdouble)
 
-####################
 
-#prints function outputs
-print ("f(x) in range", a, "to", b, "equals: ") 
-print (f1)
 
-print ("f'(x) in range", a, "to", b, "equals: ") 
-print (fprime)
 
-print("absolute min: ", min(f1))
-print("absolute max: ", max(f1))
-
+#####################_finds concavity using f''
 #extrema at interior pts
-if fprime.append(eval(f))==0 in list(fprime) and fprime2.append(eval(f))<0 in list(fprime2) :
+if fprime.append(eval(f))==0 in list(fprime) and fdouble.append(eval(f))<0 in list(fdouble) :
     print("local max @")
-if fprime.append(eval(f))==0 in list(fprime) and fprime2.append(eval(f))>0 in list(fprime) :
+if fprime.append(eval(f))==0 in list(fprime) and fdouble.append(eval(f))>0 in list(fdouble) :
     print("local min @")
+
+
+
+
+
 """
 #loop and figure out how to get x-value & include where fprime=DNE 1/0
 
