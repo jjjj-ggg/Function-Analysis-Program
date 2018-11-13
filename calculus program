@@ -38,7 +38,26 @@ print ("f(x) in range", a, "to", b, "equals: ")
 print (f1)
 
 print ("f'(x) in range", a, "to", b, "equals: ") 
-print (fprime)
+print (fprime) 
+
+
+
+##############
+
+f2 = []                         # creates f2 which is a list that will contain y values for the function
+for x in range(a,b+1):          
+   f2.append(eval(fprime))      #calcuates f1(x) and puts in f2
+
+
+fdouble = []                    #creates a list that will contain fdouble
+for x in range (a,b+1):         
+   x = h+x                      #redefines x as x + h to find f(x+h)
+   fd= eval(fprime)             #calculates f(x+h)
+   x = int(x-h+.1)-a            #redefines x so that it points to the coresponding f(x) value in f1
+   fdouble.append((fd-f2[x])/h) # calculates the derivitive using the definition of a derivitive and puts in fprime
+
+print (fdouble)
+
 
 
 
