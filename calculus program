@@ -17,7 +17,7 @@ b = 10 # upper limit
 h = 0.000000001                 #defines delta x or h
 
 
-########_finding f'
+########_finds f'
 f1 = []                         # creates f1 which is a list that will contain y values for the function
 for x in range(a,b+1):          
    f1.append(eval(f))           #calcuates f(x) and puts in f1
@@ -28,13 +28,9 @@ for x in range (a,b+1):
    x = h+x                      #redefines x as x + h to find f(x+h)
    fh= eval(f)                  #calculates f(x+h)
    x = int(x-h+.1)-a            #redefines x so that it points to the coresponding f(x) value in f1
-   p=round(((fh-f1[x])/h), 3)
+   p=round(((fh-f1[x])/h), 3)   #rounds fprime
    fprime.append(p)             # calculates the derivitive using the definition of a derivitive and puts in fprime
 
-print (fprime[3])               #calling f' at x = 3
-
-
-####################_finds extremes using f'
 #prints function outputs
 print ("f(x) in range", a, "to", b, "equals: ") 
 print (f1)
@@ -46,13 +42,33 @@ print("absolute min: ", min(f1))
 print("absolute max: ", max(f1))
 
 
-g = (list(h))
-print (g)
+#print (fprime[3])               #calling f' at x = 3
 
-#fprime1 = fprime + list(h)
-#print (fprime1)
+#print ("hi", fprime([x]))       #finds f prime given a list value of x
+
+#fprime = fprime([x])
+#fhprime = fprime([x+h])
+
+print ("look", fprime([h+3]))
 
 
+
+
+
+j = 0                               #sets the inital value for the ___ = 1
+for x in range (a,b+1):         
+   j = j+1                          #sets so every time the loop runs j increases by 1
+   j.append()                       #makes j into a list
+   print (j)
+   
+
+- fprime
+- fhprime
+   
+   
+   
+
+"""
 ##############_finding f''
 
 
@@ -76,7 +92,7 @@ print (fdouble)
 
 
 
-"""
+
 #####################_finds concavity using f''
 #extrema at interior pts
 if fprime.append(eval(f))==0 in list(fprime) and fdouble.append(eval(f))<0 in list(fdouble) :
