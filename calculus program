@@ -57,10 +57,11 @@ for x in range (a,b+1):
     x = x + 2*h
     fj = eval(f)
     #x = int(x-h+.1)-a 
-    q = round(((fj-fh2[x])/h) - ((fh2[x]-f1[x])/h), 5 )
+    #q = round((((fj-fh2[x])/h) - ((fh2[x]-f1[x])/h))/h, 5 )
+    q = (((fj-fh2[x])/h) - ((fh2[x]-f1[x])/h))/h
     f2.append(q)
     
-    
+
 
 print (f2)
 
