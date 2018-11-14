@@ -46,13 +46,18 @@ print("absolute max: ", max(f1))
 
 ##############_finding f''
 
+fh2 = []
+for x in range(a,b+1):
+    x = h+x                      #redefines x as x + h to find f(x+h)
+    fh2 = eval(f)
+    fh2.append(eval(f))
 
 f2 = []
 for x in range (a,b+1):
-    x = x+2*h
-    fh = eval(f)
+    x = x + 2*h
+    fj = eval(f)
     x = int(x-h+.1)-a 
-    q = round(((fh-f1[x])/h), 5)
+    q = round(((fj-fh2[x])/h), 5)
     f2.append(q)
     
     
